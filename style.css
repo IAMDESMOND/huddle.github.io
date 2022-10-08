@@ -1,0 +1,124 @@
+/*BACKGROUND */
+
+body {
+    background: linear-gradient(90deg, hsla(257, 40%, 49%, 0.8), hsla(257, 40%, 49%, 0.8)), url(/images/bg-desktop.svg);
+    padding: 30px;
+}
+
+/*Logo*/
+
+.logo {
+    display: block;
+    margin-bottom: 100px;
+}
+/* MAIN */
+.container {
+    display: flex;
+}
+
+.container img {
+    width: 60%;
+}
+
+.info {
+    margin: 30px 20px 60px 30px;
+}
+
+h1 {
+    font-family: 'Poppins';
+}
+
+.container a {
+    text-decoration: none;
+    color:  hsl(257, 40%, 49%);
+    padding: 10px 50px;
+    margin-top: 10px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content:flex-end;
+}
+
+.icons i {
+    padding: 10px;
+    border: 2px solid #fff;
+    margin: 20px;
+    border-radius: 100%;
+}
+
+/* TABLETS */
+
+@media screen and (max-width: 824px){
+    .container img{
+        height: 50vh;
+    }
+
+    .logo {
+        margin-bottom: 50px;
+        margin-left: 10px;
+    }
+
+    .info {
+        margin: 0px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+
+/* small tablets */
+
+@media screen and (max-width: 760px){
+    body{
+        padding: 10px;
+    }
+
+    .logo {
+        width: 200px;
+        margin-left: 17px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .container img {
+        width: 90%;
+        height: 60vh;
+        margin: auto;
+        display: block;
+    }
+
+    .info {
+        text-align: center;
+    }
+    .icons {
+        justify-content: center;
+    }
+}
+
+/* mobile veiw */
+
+@media screen and (max-width: 400px) {
+    .logo {
+        width: 150px;
+    }
+    .container img {
+        height: 35vh;
+    }
+    .container a {
+        padding: 10px 70px;
+        background-color: #fff;
+    
+    }
+}
