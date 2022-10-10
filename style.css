@@ -1,17 +1,17 @@
-/*BACKGROUND */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
 body {
-    background: linear-gradient(90deg, hsla(257, 40%, 49%, 0.8), hsla(257, 40%, 49%, 0.8)), url(images/bg-desktop.svg);
+    background: linear-gradient(90deg, hsla(257, 40%, 49%, 0.8), hsla(257, 40%, 49%, 0.8)), url(images/bg-desktop.svg) no-repeat fixed;
     padding: 30px;
+    font-family: "Open Sans";
+    box-sizing: border-box;
 }
-
-/*Logo*/
 
 .logo {
     display: block;
     margin-bottom: 100px;
 }
-/* MAIN */
+
 .container {
     display: flex;
 }
@@ -22,21 +22,29 @@ body {
 
 .info {
     margin: 30px 20px 60px 30px;
+    color: #fff;
 }
 
 h1 {
-    font-family: 'Poppins';
+    font-weight: 600;
+    font-family: "Poppins";
 }
 
 .container a {
     text-decoration: none;
-    color:  hsl(257, 40%, 49%);
+    color: hsl(257, 40%, 49%);
     padding: 10px 50px;
-    margin-top: 10px;
+    border-radius: 30px;
     background-color: #fff;
     display: inline-block;
-    border-radius: 20px;
+    margin-top: 10px;
 }
+
+.container a:hover {
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    color: #fff;
+    }
 
 .icons {
     display: flex;
@@ -44,13 +52,14 @@ h1 {
 }
 
 .icons i {
-    padding: 10px;
-    border: 2px solid #fff;
     margin: 20px;
     border-radius: 100%;
+    color: #fff;
 }
 
-/* TABLETS */
+.icons i:hover{
+    color:hsl(300, 69%, 71%)
+}
 
 @media screen and (max-width: 824px){
     .container img{
@@ -67,7 +76,7 @@ h1 {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 1.5rem;
     }
 
     p {
@@ -75,10 +84,7 @@ h1 {
     }
 }
 
-
-/* small tablets */
-
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
     body{
         padding: 10px;
     }
@@ -94,22 +100,29 @@ h1 {
 
     .container img {
         width: 90%;
-        height: 60vh;
+        height: 55vh;
         margin: auto;
         display: block;
     }
 
     .info {
         text-align: center;
+        margin-bottom: 40px;
     }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
     .icons {
         justify-content: center;
     }
 }
 
-/* mobile veiw */
-
 @media screen and (max-width: 400px) {
+    body {
+        background: linear-gradient(90deg, hsla(257, 40%, 49%, 0.8), hsla(257, 40%, 49%, 0.8)), url(images/bg-mobile.svg) no-repeat fixed;
+    }
     .logo {
         width: 150px;
     }
@@ -118,7 +131,14 @@ h1 {
     }
     .container a {
         padding: 10px 70px;
-        background-color: #fff;
     
     }
+    h1 {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .container p {
+        font-size: 0.9rem;
+    }
+
 }
