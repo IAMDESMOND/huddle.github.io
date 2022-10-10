@@ -44,6 +44,8 @@ h1 {
     background-color: hsl(300, 69%, 71%);
     cursor: pointer;
     color: #fff;
+    padding: 12px 52px;
+    box-shadow: 2px 2px blur black;
     }
 
 .icons {
